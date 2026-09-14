@@ -1,0 +1,64 @@
+name: ci
+on: [push, pull_request]
+permissions: {contents: read}
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install -e '.[dev]'
+      - run: ruff check src tests testkit
+      - run: pytest -q
+      - name: test vectors must be reproducible from the corpus script
+        run: |
+          cp -r testkit/vectors /tmp/vectors-before
+          python testkit/make_vectors.py
+          python - <<'EOF'
+          import json, pathlib
+          # signatures are fresh each run; the verdicts (expect) must not move
+          for p in sorted(pathlib.Path('testkit/vectors').glob('*.json')):
+              a = json.loads(p.read_text())['expect']; b = json.loads((pathlib.Path('/tmp/vectors-before')/p.name).read_text())['expect']
+              assert a == b, p.name
+          EOF
+      - run: one-receipt vectors
+      - run: one-receipt verify examples/minimal-receipt.json --public examples/public-key.pem
+  schema:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - run: pip install jsonschema referencing check-jsonschema
+      - name: every schema is itself a valid 2020-12 schema
+        run: check-jsonschema --check-metaschema spec/schema/one-receipt-envelope.schema.json spec/schema/predicates/*.schema.json
+  typescript:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: '22'}
+      - run: cd packages/typescript && npm install --no-audit --no-fund && npm test
+  requirements:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: exactly 360 requirements, 18 domains × 20, unique ids
+        run: |
+          python - <<'EOF'
+          import csv, collections
+          rows = list(csv.DictReader(open('requirements/requirements.csv')))
+          assert len(rows) == 360, len(rows)
+          by = collections.Counter(r['domain'] for r in rows)
+          assert len(by) == 18 and set(by.values()) == {20}, by
+          assert len({r['id'] for r in rows}) == 360
+          EOF
+  links:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: lycheeverse/lychee-action@v2
+        with:
+          args: --no-progress --accept 200,202,204,301,302,403,429 --exclude 'example\.(org|com)' --exclude 'did:web' './**/*.md'
+          fail: false

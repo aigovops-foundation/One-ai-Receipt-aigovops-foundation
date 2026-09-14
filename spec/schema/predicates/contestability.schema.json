@@ -1,0 +1,177 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/contestability.schema.json",
+  "title": "Contestability predicate 1.0",
+  "description": "How a person notices, understands, challenges, gets human review, and obtains a remedy \u2014 keyed to this receipt. Replaces the v0.1 complaint_ref pointer.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "notice",
+    "explanation",
+    "challenge",
+    "human_review"
+  ],
+  "properties": {
+    "notice": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "given"
+      ],
+      "properties": {
+        "given": {
+          "type": "boolean"
+        },
+        "channel": {
+          "enum": [
+            "in-interface",
+            "email",
+            "letter",
+            "spoken",
+            "none"
+          ]
+        },
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "accessible_formats": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "explanation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "decision-summary",
+            "factors",
+            "counterfactual",
+            "policy-text",
+            "none"
+          ]
+        },
+        "legal_basis": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "challenge": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "route_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "deadline": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "cost": {
+          "enum": [
+            "free",
+            "fee",
+            "unknown"
+          ]
+        },
+        "representative_allowed": {
+          "type": "boolean"
+        }
+      }
+    },
+    "human_review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "available"
+      ],
+      "properties": {
+        "available": {
+          "type": "boolean"
+        },
+        "reviewer_authority": {
+          "enum": [
+            "override",
+            "recommend",
+            "none"
+          ]
+        },
+        "reviewer_independent": {
+          "type": "boolean"
+        },
+        "sla_hours": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "remedy": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "types": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "correction",
+              "reversal",
+              "deletion",
+              "compensation-referral",
+              "re-run-with-human",
+              "none"
+            ]
+          }
+        },
+        "collective_redress": {
+          "type": "boolean"
+        },
+        "escalation_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "outcome_receipt_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^urn:one-receipt:"
+      },
+      "description": "Challenge, review and remedy receipts that answer this one."
+    }
+  }
+}

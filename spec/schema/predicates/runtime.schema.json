@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/runtime.schema.json",
+  "title": "Runtime predicate 1.0",
+  "description": "What was computed and where, as commitments and references, never content.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "content_included"
+  ],
+  "properties": {
+    "content_included": {
+      "const": false
+    },
+    "input_commitment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scheme",
+        "value"
+      ],
+      "properties": {
+        "scheme": {
+          "enum": [
+            "salted-sha256",
+            "hmac-sha256",
+            "pedersen"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{16,}$"
+        },
+        "salt_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "description": "A commitment to content the receipt never carries. Plain hashes are not permitted."
+    },
+    "output_commitment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scheme",
+        "value"
+      ],
+      "properties": {
+        "scheme": {
+          "enum": [
+            "salted-sha256",
+            "hmac-sha256",
+            "pedersen"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{16,}$"
+        },
+        "salt_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "description": "A commitment to content the receipt never carries. Plain hashes are not permitted."
+    },
+    "counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "tool_calls": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "latency_ms": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "attestation": {
+          "enum": [
+            "none",
+            "rats-evidence",
+            "tee-quote",
+            "confidential-space",
+            "pcc"
+          ]
+        },
+        "attestation_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "region": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "otel": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "trace_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "span_id": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "child_receipt_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^urn:one-receipt:"
+      },
+      "uniqueItems": true
+    }
+  }
+}

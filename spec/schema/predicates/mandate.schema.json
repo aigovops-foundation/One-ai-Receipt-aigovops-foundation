@@ -1,0 +1,79 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/mandate.schema.json",
+  "title": "Mandate predicate 1.0",
+  "description": "What the human (or authority) authorised the system to do. Accepts external signed mandates unchanged.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "scheme",
+    "within_mandate"
+  ],
+  "properties": {
+    "scheme": {
+      "enum": [
+        "plain-words-rule",
+        "ap2-intent",
+        "ap2-cart",
+        "mastercard-verifiable-intent",
+        "visa-tap",
+        "acp-allowance",
+        "oidc-consent",
+        "none"
+      ]
+    },
+    "scope": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limits": {
+      "type": "object"
+    },
+    "expiry": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "mandate_commitment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scheme",
+        "value"
+      ],
+      "properties": {
+        "scheme": {
+          "enum": [
+            "salted-sha256",
+            "hmac-sha256",
+            "pedersen"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{16,}$"
+        },
+        "salt_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "description": "A commitment to content the receipt never carries. Plain hashes are not permitted."
+    },
+    "mandate_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "within_mandate": {
+      "enum": [
+        "yes",
+        "no",
+        "not-assessed"
+      ]
+    },
+    "community_authority_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "Present when a collective authority, not an individual, is the mandating party."
+    }
+  }
+}

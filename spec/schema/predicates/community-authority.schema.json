@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/community-authority.schema.json",
+  "title": "Community authority extension 1.0",
+  "description": "Data-sovereignty and collective-authority terms (CARE principles). Nothing here is ever a public-log payload; only references and flags.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "authority_ref",
+    "consent_basis"
+  ],
+  "properties": {
+    "authority_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "consent_basis": {
+      "enum": [
+        "fpic",
+        "community-protocol",
+        "delegated",
+        "not-applicable"
+      ]
+    },
+    "use_restrictions": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "no-public-log",
+          "no-transfer",
+          "no-training",
+          "no-retention-beyond-purpose",
+          "community-review-required"
+        ]
+      }
+    },
+    "stewardship_contact_ref": {
+      "type": "string",
+      "minLength": 1
+    },
+    "review_required_before_disclosure": {
+      "type": "boolean"
+    }
+  }
+}

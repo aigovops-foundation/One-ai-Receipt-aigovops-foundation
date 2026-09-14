@@ -1,0 +1,191 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/one-receipt-envelope.schema.json",
+  "title": "One Receipt Envelope v0.2-draft",
+  "description": "One signed, content-free statement about one bounded AI transaction event. A valid envelope proves only that the issuer signed these claims, bound them to identifiers and time, and supplied the evidence the selected assurance level requires. It never proves truth, fairness, safety, legality, accuracy or absence of harm.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "spec_version",
+    "receipt_id",
+    "transaction_id",
+    "event_id",
+    "root_receipt_id",
+    "transaction_type",
+    "sequence",
+    "boundary",
+    "started_at",
+    "ended_at",
+    "issued_at",
+    "clock_source",
+    "issuer",
+    "assurance_level",
+    "privacy_profile",
+    "predicate_manifest",
+    "predicates",
+    "limitations",
+    "signature"
+  ],
+  "properties": {
+    "spec_version": { "const": "0.2-draft" },
+    "receipt_id": { "$ref": "#/$defs/urn" },
+    "transaction_id": { "$ref": "#/$defs/urn" },
+    "event_id": {
+      "$ref": "#/$defs/urn",
+      "description": "Identifies the observed event. Two receipts about the same event (for example operator and reviewer) share an event_id and differ in receipt_id."
+    },
+    "parent_receipt_ids": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/urn" },
+      "uniqueItems": true,
+      "default": []
+    },
+    "root_receipt_id": {
+      "$ref": "#/$defs/urn",
+      "description": "The receipt that opened this transaction graph. Equals receipt_id for a root."
+    },
+    "transaction_type": {
+      "enum": [
+        "inference",
+        "tool-call",
+        "agent-delegation",
+        "human-review",
+        "output-delivery",
+        "policy-decision",
+        "challenge",
+        "review",
+        "remedy",
+        "incident",
+        "aggregate"
+      ]
+    },
+    "sequence": { "type": "integer", "minimum": 0 },
+    "boundary": {
+      "enum": ["request-response", "streaming-segment", "agent-action", "batch", "aggregate"]
+    },
+    "started_at": { "type": "string", "format": "date-time" },
+    "ended_at": { "type": "string", "format": "date-time" },
+    "issued_at": { "type": "string", "format": "date-time" },
+    "clock_source": {
+      "enum": ["issuer", "trusted-time-authority", "qualified-time-stamp"]
+    },
+    "issuer": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "key_id", "role"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "key_id": { "type": "string", "minLength": 1 },
+        "role": {
+          "enum": ["operator", "delegate", "reviewer", "remediator", "log-operator", "assessor", "registry-steward"]
+        },
+        "key_discovery": {
+          "enum": ["did-web", "did-key", "jwks", "x509", "scitt-issuer", "out-of-band"]
+        }
+      }
+    },
+    "assurance_level": { "enum": ["OR-0", "OR-1", "OR-2", "OR-3", "OR-4", "OR-5"] },
+    "privacy_profile": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["profile", "commitment_scheme", "linkability_scope", "metadata_minimization"],
+      "properties": {
+        "profile": {
+          "enum": ["content-free", "commitment-only", "authority-disclosable", "consented-disclosure"]
+        },
+        "commitment_scheme": {
+          "description": "Plain hashes of guessable content are forbidden; every commitment carries a salt or key never placed in the receipt.",
+          "enum": ["none", "salted-sha256", "hmac-sha256", "pedersen"]
+        },
+        "linkability_scope": { "enum": ["transaction", "principal-session", "none"] },
+        "metadata_minimization": { "type": "boolean" },
+        "reidentification_risk_assessment_ref": { "type": "string" },
+        "disclosure_authority": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Who may open a commitment or pointer, by role or authority reference, never by personal identifier."
+        }
+      }
+    },
+    "predicate_manifest": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["type", "version", "critical"],
+        "properties": {
+          "type": { "type": "string", "pattern": "^[a-z][a-z0-9-]*(\\.[a-z][a-z0-9-]*)*$" },
+          "version": { "type": "string", "pattern": "^[0-9]+\\.[0-9]+$" },
+          "critical": { "type": "boolean" },
+          "omission_reason": {
+            "enum": [
+              "not-applicable",
+              "not-collected",
+              "withheld-privacy",
+              "withheld-legal",
+              "withheld-security",
+              "unavailable-outage",
+              "deferred-to-parent",
+              "deferred-to-aggregate"
+            ]
+          }
+        }
+      }
+    },
+    "predicates": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z][a-z0-9-]*(\\.[a-z][a-z0-9-]*)*$" },
+      "properties": {
+        "transaction": { "$ref": "predicates/transaction.schema.json" },
+        "identity": { "$ref": "predicates/identity.schema.json" },
+        "mandate": { "$ref": "predicates/mandate.schema.json" },
+        "policy": { "$ref": "predicates/policy.schema.json" },
+        "runtime": { "$ref": "predicates/runtime.schema.json" },
+        "provenance-disclosure": { "$ref": "predicates/provenance-disclosure.schema.json" },
+        "witness": { "$ref": "predicates/witness.schema.json" },
+        "contestability": { "$ref": "predicates/contestability.schema.json" },
+        "legal-evidence": { "$ref": "predicates/legal-evidence.schema.json" },
+        "community-authority": { "$ref": "predicates/community-authority.schema.json" }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 1 }
+    },
+    "extensions": {
+      "type": "object",
+      "description": "Namespaced, non-normative additions (for example aigovops.beacon, glacis.overt, scitt). Verifiers ignore what they do not understand; nothing here changes validity.",
+      "propertyNames": { "pattern": "^[a-z][a-z0-9-]*(\\.[a-z][a-z0-9-]*)+$" }
+    },
+    "signature": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["algorithm", "canonicalization", "key_id", "value"],
+      "properties": {
+        "algorithm": { "enum": ["Ed25519", "ES256", "ML-DSA-65", "Ed25519+ML-DSA-65"] },
+        "canonicalization": { "enum": ["JCS", "CBOR-CDE"] },
+        "key_id": { "type": "string", "minLength": 1 },
+        "value": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" },
+        "countersignatures": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["algorithm", "key_id", "role", "value"],
+            "properties": {
+              "algorithm": { "enum": ["Ed25519", "ES256", "ML-DSA-65", "Ed25519+ML-DSA-65"] },
+              "key_id": { "type": "string" },
+              "role": { "enum": ["log-operator", "witness", "time-authority", "reviewer", "assessor"] },
+              "value": { "type": "string", "pattern": "^[A-Za-z0-9_-]+$" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "urn": { "type": "string", "pattern": "^urn:one-receipt:[A-Za-z0-9._:-]+$" }
+  }
+}

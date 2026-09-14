@@ -1,0 +1,88 @@
+{
+  "spec_version": "0.2-draft",
+  "receipt_id": "urn:one-receipt:r:d9c78c59-4036-447e-8dfa-1348c59f23d0",
+  "transaction_id": "urn:one-receipt:t:d69a4380-f8dc-46aa-9683-3b57d2ef38f6",
+  "event_id": "urn:one-receipt:e:2787e4d0-b3c3-477d-b4bd-2615fb0e9beb",
+  "parent_receipt_ids": [],
+  "root_receipt_id": "urn:one-receipt:r:d9c78c59-4036-447e-8dfa-1348c59f23d0",
+  "transaction_type": "inference",
+  "sequence": 0,
+  "boundary": "request-response",
+  "started_at": "2026-09-14T16:55:24Z",
+  "ended_at": "2026-09-14T16:55:24Z",
+  "issued_at": "2026-09-14T16:55:24Z",
+  "clock_source": "issuer",
+  "issuer": {
+    "id": "did:web:cafe.aigovops-foundation.example",
+    "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+    "role": "operator"
+  },
+  "assurance_level": "OR-1",
+  "privacy_profile": {
+    "profile": "content-free",
+    "commitment_scheme": "salted-sha256",
+    "linkability_scope": "transaction",
+    "metadata_minimization": true
+  },
+  "predicate_manifest": [
+    {
+      "type": "contestability",
+      "version": "1.0",
+      "critical": true
+    },
+    {
+      "type": "policy",
+      "version": "1.0",
+      "critical": true
+    },
+    {
+      "type": "runtime",
+      "version": "1.0",
+      "critical": true
+    },
+    {
+      "type": "transaction",
+      "version": "1.0",
+      "critical": true
+    }
+  ],
+  "predicates": {
+    "transaction": {
+      "interface": "api"
+    },
+    "policy": {
+      "policy_id": "demo",
+      "version": "1",
+      "decision": "allow",
+      "enforcement_point": "pre-action"
+    },
+    "runtime": {
+      "content_included": false
+    },
+    "contestability": {
+      "notice": {
+        "given": true
+      },
+      "explanation": {
+        "available": false
+      },
+      "challenge": {
+        "available": true
+      },
+      "human_review": {
+        "available": false
+      }
+    }
+  },
+  "limitations": [
+    "Integrity verification proves that the issuer signed these claims; it does not prove truth, fairness, safety, legality, accuracy, or absence of harm.",
+    "Commitments are content-free; a verifier cannot recover prompts, outputs, weights or personal data from this receipt.",
+    "Assurance above OR-2 depends on an independent log and witnesses; the verified level is what the verifier could substantiate, not what the issuer claimed."
+  ],
+  "signature": {
+    "algorithm": "Ed25519",
+    "canonicalization": "JCS",
+    "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+    "value": "DrrzRlmuqTUVKMeACQIkXfTxbBx1Lma5XuwUyqjl3OAsU01KHH87bibKGqbpXrd1Lp80CAJWRPxMDLdc-9XIDQ"
+  }
+}

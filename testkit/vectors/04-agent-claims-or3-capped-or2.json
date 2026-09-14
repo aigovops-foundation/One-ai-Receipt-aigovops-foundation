@@ -1,0 +1,193 @@
+{
+  "spec_version": "0.2-draft",
+  "case": "VH-056 Knight Capital",
+  "receipt": {
+    "spec_version": "0.2-draft",
+    "receipt_id": "urn:one-receipt:r:9f57a23d-f209-4a09-8c3b-5203f7a8521e",
+    "transaction_id": "urn:one-receipt:t:7082e714-a972-4f70-99e7-63aa1d4dc1e9",
+    "event_id": "urn:one-receipt:e:3f42ea08-8af1-4721-b5d8-71dbc31cdb66",
+    "parent_receipt_ids": [],
+    "root_receipt_id": "urn:one-receipt:r:9f57a23d-f209-4a09-8c3b-5203f7a8521e",
+    "transaction_type": "policy-decision",
+    "sequence": 0,
+    "boundary": "agent-action",
+    "started_at": "2026-09-14T15:00:00Z",
+    "ended_at": "2026-09-14T15:00:02Z",
+    "issued_at": "2026-09-14T16:55:24Z",
+    "clock_source": "issuer",
+    "issuer": {
+      "id": "did:web:cafe.aigovops-foundation.example",
+      "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+      "role": "operator"
+    },
+    "assurance_level": "OR-3",
+    "privacy_profile": {
+      "profile": "content-free",
+      "commitment_scheme": "salted-sha256",
+      "linkability_scope": "transaction",
+      "metadata_minimization": true
+    },
+    "predicate_manifest": [
+      {
+        "type": "contestability",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "identity",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "mandate",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "policy",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "provenance-disclosure",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "runtime",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "transaction",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "witness",
+        "version": "1.0",
+        "critical": false
+      }
+    ],
+    "predicates": {
+      "transaction": {
+        "interface": "agent-to-agent",
+        "id_carrier": "response-header"
+      },
+      "identity": {
+        "principal_binding_mode": "pseudonymous",
+        "principal_ref": "pseud:vh-056",
+        "operator_id": "did:web:cafe.aigovops-foundation.example",
+        "model": {
+          "ref": "example:model",
+          "version": "2026-09"
+        }
+      },
+      "mandate": {
+        "scheme": "plain-words-rule",
+        "scope": "answer within published policy",
+        "within_mandate": "yes"
+      },
+      "policy": {
+        "policy_id": "corpus-VH-056",
+        "version": "1",
+        "enforcement_point": "pre-action",
+        "decision": "hold",
+        "controls": [
+          {
+            "id": "UCID-KILL-SWITCH",
+            "vocabulary": "ucid",
+            "outcome": "pass"
+          }
+        ],
+        "human_in_loop": "approved"
+      },
+      "runtime": {
+        "content_included": false,
+        "counts": {
+          "input_tokens": 412,
+          "output_tokens": 96
+        }
+      },
+      "provenance-disclosure": {
+        "ai_disclosed": true,
+        "disclosure_channel": "visible-text",
+        "output_kind": "text"
+      },
+      "contestability": {
+        "notice": {
+          "given": true,
+          "channel": "in-interface",
+          "languages": [
+            "en",
+            "es"
+          ]
+        },
+        "explanation": {
+          "available": true,
+          "kind": "decision-summary"
+        },
+        "challenge": {
+          "available": true,
+          "cost": "free",
+          "representative_allowed": true
+        },
+        "human_review": {
+          "available": true,
+          "reviewer_authority": "override",
+          "reviewer_independent": true,
+          "sla_hours": 72
+        },
+        "remedy": {
+          "types": [
+            "correction",
+            "reversal"
+          ],
+          "collective_redress": false
+        }
+      },
+      "witness": {
+        "log_operator": {
+          "id": "did:web:cafe.aigovops-foundation.example",
+          "kind": "scitt"
+        },
+        "log_checkpoint": {
+          "tree_size": 4096,
+          "root_hash": "c0ffee"
+        },
+        "inclusion_proof": {
+          "leaf_index": 41,
+          "hashes": [
+            "a1",
+            "b2",
+            "c3"
+          ],
+          "format": "rfc6962"
+        },
+        "observed_at": "2026-09-14T15:00:03Z",
+        "equivocation_status": "not-observed"
+      }
+    },
+    "limitations": [
+      "Integrity verification proves that the issuer signed these claims; it does not prove truth, fairness, safety, legality, accuracy, or absence of harm.",
+      "Commitments are content-free; a verifier cannot recover prompts, outputs, weights or personal data from this receipt.",
+      "Assurance above OR-2 depends on an independent log and witnesses; the verified level is what the verifier could substantiate, not what the issuer claimed."
+    ],
+    "signature": {
+      "algorithm": "Ed25519",
+      "canonicalization": "JCS",
+      "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+      "value": "88dmajgPMCCFz1OcJ_KaoOYMZunm6Q-e3w26hRJ0Ztf5eyDaMbVK4o0BAC0kGZPhEN9BA3O84zO0xW4JMMZgBw"
+    },
+    "extensions": {
+      "aigovops.corpus": {
+        "case": "VH-056"
+      }
+    }
+  },
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUcVUmFxQGtils4mI2sficKf6XaVVrnMUsbyuaHo2AMc=\n-----END PUBLIC KEY-----\n",
+  "expect": {
+    "valid": true,
+    "verified_level": "OR-2"
+  }
+}

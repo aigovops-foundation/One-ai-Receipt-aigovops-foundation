@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/identity.schema.json",
+  "title": "Identity predicate 1.0",
+  "description": "Who acted, on whose behalf, with what \u2014 bound together for one event without personal identifiers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "principal_binding_mode"
+  ],
+  "properties": {
+    "principal_binding_mode": {
+      "enum": [
+        "none",
+        "pseudonymous",
+        "authenticated-ref",
+        "collective"
+      ]
+    },
+    "principal_ref": {
+      "type": "string",
+      "minLength": 1,
+      "description": "A pointer or pseudonym, never a stable user id, IP address, exact location or capability token."
+    },
+    "operator_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "agent": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "card_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "workload_identity": {
+          "enum": [
+            "spiffe",
+            "web-bot-auth",
+            "oidc-workload",
+            "none"
+          ]
+        }
+      }
+    },
+    "model": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "version": {
+          "type": "string",
+          "minLength": 1
+        },
+        "bom_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "weights_commitment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scheme",
+            "value"
+          ],
+          "properties": {
+            "scheme": {
+              "enum": [
+                "salted-sha256",
+                "hmac-sha256",
+                "pedersen"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{16,}$"
+            },
+            "salt_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "description": "A commitment to content the receipt never carries. Plain hashes are not permitted."
+        }
+      }
+    },
+    "tool_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    }
+  }
+}

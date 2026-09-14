@@ -1,0 +1,167 @@
+{
+  "spec_version": "0.2-draft",
+  "case": "VH-022 Chevrolet of Watsonville",
+  "receipt": {
+    "spec_version": "0.2-draft",
+    "receipt_id": "urn:one-receipt:r:e7f38dd2-b756-4d22-97c8-a077c37805da",
+    "transaction_id": "urn:one-receipt:t:13e211cc-3e8a-41da-bc28-76ef33813abe",
+    "event_id": "urn:one-receipt:e:c0a3fc72-f8ac-475d-ae0f-82c39ec19d5a",
+    "parent_receipt_ids": [],
+    "root_receipt_id": "urn:one-receipt:r:e7f38dd2-b756-4d22-97c8-a077c37805da",
+    "transaction_type": "output-delivery",
+    "sequence": 0,
+    "boundary": "request-response",
+    "started_at": "2026-09-14T15:00:00Z",
+    "ended_at": "2026-09-14T15:00:02Z",
+    "issued_at": "2026-09-14T16:55:24Z",
+    "clock_source": "issuer",
+    "issuer": {
+      "id": "did:web:cafe.aigovops-foundation.example",
+      "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+      "role": "operator"
+    },
+    "assurance_level": "OR-1",
+    "privacy_profile": {
+      "profile": "content-free",
+      "commitment_scheme": "salted-sha256",
+      "linkability_scope": "transaction",
+      "metadata_minimization": true
+    },
+    "predicate_manifest": [
+      {
+        "type": "contestability",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "identity",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "mandate",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "policy",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "provenance-disclosure",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "runtime",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "transaction",
+        "version": "1.0",
+        "critical": true
+      }
+    ],
+    "predicates": {
+      "transaction": {
+        "interface": "commerce",
+        "id_carrier": "response-header"
+      },
+      "identity": {
+        "principal_binding_mode": "pseudonymous",
+        "principal_ref": "pseud:vh-022",
+        "operator_id": "did:web:cafe.aigovops-foundation.example",
+        "model": {
+          "ref": "example:model",
+          "version": "2026-09"
+        }
+      },
+      "mandate": {
+        "scheme": "ap2-cart",
+        "scope": "quote a vehicle at list price",
+        "within_mandate": "no",
+        "mandate_ref": "ap2:cart:demo"
+      },
+      "policy": {
+        "policy_id": "corpus-VH-022",
+        "version": "1",
+        "enforcement_point": "pre-action",
+        "decision": "allow",
+        "controls": [
+          {
+            "id": "UCID-PRICE-FLOOR",
+            "vocabulary": "ucid",
+            "outcome": "fail"
+          }
+        ]
+      },
+      "runtime": {
+        "content_included": false,
+        "counts": {
+          "input_tokens": 412,
+          "output_tokens": 96
+        }
+      },
+      "provenance-disclosure": {
+        "ai_disclosed": true,
+        "disclosure_channel": "visible-text",
+        "output_kind": "text"
+      },
+      "contestability": {
+        "notice": {
+          "given": true,
+          "channel": "in-interface",
+          "languages": [
+            "en",
+            "es"
+          ]
+        },
+        "explanation": {
+          "available": true,
+          "kind": "decision-summary"
+        },
+        "challenge": {
+          "available": true,
+          "cost": "free",
+          "representative_allowed": true
+        },
+        "human_review": {
+          "available": true,
+          "reviewer_authority": "override",
+          "reviewer_independent": true,
+          "sla_hours": 72
+        },
+        "remedy": {
+          "types": [
+            "correction",
+            "reversal"
+          ],
+          "collective_redress": false
+        }
+      }
+    },
+    "limitations": [
+      "Integrity verification proves that the issuer signed these claims; it does not prove truth, fairness, safety, legality, accuracy, or absence of harm.",
+      "Commitments are content-free; a verifier cannot recover prompts, outputs, weights or personal data from this receipt.",
+      "Assurance above OR-2 depends on an independent log and witnesses; the verified level is what the verifier could substantiate, not what the issuer claimed."
+    ],
+    "signature": {
+      "algorithm": "Ed25519",
+      "canonicalization": "JCS",
+      "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+      "value": "sUxsrZYG107H2WxYLEEuN5KT1nMqhZvsrrLEM9c4qAjSmirze8BlA5ZERCeNXiDB2IXekBbsm8B_pLAuMy0BDg"
+    },
+    "extensions": {
+      "aigovops.corpus": {
+        "case": "VH-022"
+      }
+    }
+  },
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUcVUmFxQGtils4mI2sficKf6XaVVrnMUsbyuaHo2AMc=\n-----END PUBLIC KEY-----\n",
+  "expect": {
+    "valid": true,
+    "verified_level": "OR-1"
+  }
+}

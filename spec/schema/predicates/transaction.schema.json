@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/transaction.schema.json",
+  "title": "Transaction predicate 1.0",
+  "description": "How the bounded event was cut and how it sits in the graph.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "interface"
+  ],
+  "properties": {
+    "interface": {
+      "enum": [
+        "chat",
+        "api",
+        "voice",
+        "agent-to-agent",
+        "ide",
+        "browser-extension",
+        "embedded",
+        "commerce",
+        "batch",
+        "other"
+      ]
+    },
+    "boundary_rule": {
+      "type": "string",
+      "minLength": 1
+    },
+    "segment": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "of": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "batching_profile": {
+          "enum": [
+            "per-turn",
+            "per-utterance",
+            "time-window",
+            "token-window",
+            "per-action"
+          ]
+        },
+        "window_ms": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "id_carrier": {
+      "enum": [
+        "response-header",
+        "message-metadata",
+        "spoken",
+        "transcript",
+        "git-trailer",
+        "device-store",
+        "cart-mandate",
+        "none"
+      ]
+    },
+    "delegation_depth": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "dropped_events_declared": {
+      "type": "boolean",
+      "description": "True when the issuer declares that some events in this transaction were not receipted; the count belongs to the aggregate receipt."
+    }
+  }
+}

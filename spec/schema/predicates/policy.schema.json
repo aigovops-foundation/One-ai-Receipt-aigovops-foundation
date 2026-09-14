@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/policy.schema.json",
+  "title": "Policy predicate 1.0",
+  "description": "Which gate ran, on which policy version, and what it decided.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "policy_id",
+    "version",
+    "decision",
+    "enforcement_point"
+  ],
+  "properties": {
+    "policy_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "version": {
+      "type": "string",
+      "minLength": 1
+    },
+    "policy_commitment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "scheme",
+        "value"
+      ],
+      "properties": {
+        "scheme": {
+          "enum": [
+            "salted-sha256",
+            "hmac-sha256",
+            "pedersen"
+          ]
+        },
+        "value": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9_-]{16,}$"
+        },
+        "salt_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "description": "A commitment to content the receipt never carries. Plain hashes are not permitted."
+    },
+    "tier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "decision": {
+      "enum": [
+        "allow",
+        "constrain",
+        "hold",
+        "escalate",
+        "deny"
+      ]
+    },
+    "enforcement_point": {
+      "enum": [
+        "pre-action",
+        "in-flight",
+        "post-action",
+        "review"
+      ]
+    },
+    "controls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "outcome"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "vocabulary": {
+            "enum": [
+              "ucid",
+              "overt",
+              "aiuc-1",
+              "aicm",
+              "iso-42001",
+              "nist-ai-rmf",
+              "local"
+            ]
+          },
+          "outcome": {
+            "enum": [
+              "pass",
+              "fail",
+              "skipped",
+              "error"
+            ]
+          },
+          "evidence_ref": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "human_in_loop": {
+      "enum": [
+        "none",
+        "notified",
+        "approved",
+        "overrode"
+      ]
+    },
+    "risk_class": {
+      "type": "string",
+      "minLength": 1
+    },
+    "jurisdiction_refs": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    }
+  }
+}

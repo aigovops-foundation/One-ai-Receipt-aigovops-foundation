@@ -1,0 +1,159 @@
+{
+  "spec_version": "0.2-draft",
+  "case": "VH-015 Arup",
+  "receipt": {
+    "spec_version": "0.2-draft",
+    "receipt_id": "urn:one-receipt:r:3665db3b-98f2-47f9-acd3-11391d761012",
+    "transaction_id": "urn:one-receipt:t:cdf0daef-4837-46bd-9b1a-36eaa3ce3294",
+    "event_id": "urn:one-receipt:e:30851975-3c57-4878-a5e9-896c138ddf18",
+    "parent_receipt_ids": [],
+    "root_receipt_id": "urn:one-receipt:r:3665db3b-98f2-47f9-acd3-11391d761012",
+    "transaction_type": "inference",
+    "sequence": 0,
+    "boundary": "request-response",
+    "started_at": "2026-09-14T15:00:00Z",
+    "ended_at": "2026-09-14T15:00:02Z",
+    "issued_at": "2026-09-14T16:55:24Z",
+    "clock_source": "issuer",
+    "issuer": {
+      "id": "did:web:cafe.aigovops-foundation.example",
+      "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+      "role": "operator"
+    },
+    "assurance_level": "OR-1",
+    "privacy_profile": {
+      "profile": "content-free",
+      "commitment_scheme": "salted-sha256",
+      "linkability_scope": "transaction",
+      "metadata_minimization": true
+    },
+    "predicate_manifest": [
+      {
+        "type": "contestability",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "identity",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "mandate",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "policy",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "provenance-disclosure",
+        "version": "1.0",
+        "critical": false
+      },
+      {
+        "type": "runtime",
+        "version": "1.0",
+        "critical": true
+      },
+      {
+        "type": "transaction",
+        "version": "1.0",
+        "critical": true
+      }
+    ],
+    "predicates": {
+      "transaction": {
+        "interface": "chat",
+        "id_carrier": "response-header"
+      },
+      "identity": {
+        "principal_binding_mode": "pseudonymous",
+        "principal_ref": "someone@example.com",
+        "operator_id": "did:web:cafe.aigovops-foundation.example",
+        "model": {
+          "ref": "example:model",
+          "version": "2026-09"
+        }
+      },
+      "mandate": {
+        "scheme": "plain-words-rule",
+        "scope": "answer within published policy",
+        "within_mandate": "yes"
+      },
+      "policy": {
+        "policy_id": "corpus-VH-015",
+        "version": "1",
+        "enforcement_point": "pre-action",
+        "decision": "allow"
+      },
+      "runtime": {
+        "content_included": false,
+        "counts": {
+          "input_tokens": 412,
+          "output_tokens": 96
+        }
+      },
+      "provenance-disclosure": {
+        "ai_disclosed": true,
+        "disclosure_channel": "visible-text",
+        "output_kind": "text"
+      },
+      "contestability": {
+        "notice": {
+          "given": true,
+          "channel": "in-interface",
+          "languages": [
+            "en",
+            "es"
+          ]
+        },
+        "explanation": {
+          "available": true,
+          "kind": "decision-summary"
+        },
+        "challenge": {
+          "available": true,
+          "cost": "free",
+          "representative_allowed": true
+        },
+        "human_review": {
+          "available": true,
+          "reviewer_authority": "override",
+          "reviewer_independent": true,
+          "sla_hours": 72
+        },
+        "remedy": {
+          "types": [
+            "correction",
+            "reversal"
+          ],
+          "collective_redress": false
+        }
+      }
+    },
+    "limitations": [
+      "Integrity verification proves that the issuer signed these claims; it does not prove truth, fairness, safety, legality, accuracy, or absence of harm.",
+      "Commitments are content-free; a verifier cannot recover prompts, outputs, weights or personal data from this receipt.",
+      "Assurance above OR-2 depends on an independent log and witnesses; the verified level is what the verifier could substantiate, not what the issuer claimed."
+    ],
+    "signature": {
+      "algorithm": "Ed25519",
+      "canonicalization": "JCS",
+      "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
+      "value": "QxlqEa5QVCxLu6wYyAgMjnhhzhPRJ4b_CDliGg-O61zhdIlndgt3iRIraoetYIAgA4u1gh1dkqp9X8GNe_nKBA"
+    },
+    "extensions": {
+      "aigovops.corpus": {
+        "case": "VH-015"
+      }
+    }
+  },
+  "public_key": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAUcVUmFxQGtils4mI2sficKf6XaVVrnMUsbyuaHo2AMc=\n-----END PUBLIC KEY-----\n",
+  "expect": {
+    "valid": false,
+    "verified_level": null
+  }
+}

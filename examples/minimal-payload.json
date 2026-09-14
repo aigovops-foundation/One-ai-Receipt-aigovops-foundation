@@ -1,0 +1,30 @@
+{
+  "predicates": {
+    "transaction": {
+      "interface": "api"
+    },
+    "policy": {
+      "policy_id": "demo",
+      "version": "1",
+      "decision": "allow",
+      "enforcement_point": "pre-action"
+    },
+    "runtime": {
+      "content_included": false
+    },
+    "contestability": {
+      "notice": {
+        "given": true
+      },
+      "explanation": {
+        "available": false
+      },
+      "challenge": {
+        "available": true
+      },
+      "human_review": {
+        "available": false
+      }
+    }
+  }
+}

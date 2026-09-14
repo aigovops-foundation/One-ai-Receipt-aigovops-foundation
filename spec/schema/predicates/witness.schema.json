@@ -1,0 +1,150 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/witness.schema.json",
+  "title": "Witness predicate 1.0",
+  "description": "Independent registration and witnessing of the receipt. Required above OR-2. The log operator must be a different party from the issuer at OR-3 and above.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "log_operator",
+    "equivocation_status"
+  ],
+  "properties": {
+    "log_operator": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "kind": {
+          "enum": [
+            "scitt",
+            "rekor",
+            "merkle-append-only",
+            "other"
+          ]
+        },
+        "service_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "log_checkpoint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tree_size",
+        "root_hash"
+      ],
+      "properties": {
+        "tree_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "root_hash": {
+          "type": "string"
+        },
+        "checkpoint_signature": {
+          "type": "string"
+        }
+      }
+    },
+    "inclusion_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "leaf_index",
+        "hashes"
+      ],
+      "properties": {
+        "leaf_index": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "hashes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "format": {
+          "enum": [
+            "rfc6962",
+            "rfc9942-cose-receipt"
+          ]
+        }
+      }
+    },
+    "consistency_proof": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "from_tree_size": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "hashes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "witnesses": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "observed_at"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "observed_at": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cosignature": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "cross_log_anchor": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "log_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "entry_ref": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "observed_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "equivocation_status": {
+      "enum": [
+        "not-observed",
+        "suspected",
+        "confirmed"
+      ]
+    }
+  }
+}

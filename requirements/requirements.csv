@@ -1,0 +1,361 @@
+id,domain,requirement,priority,acceptance_evidence,owner,status
+STR-001,STR,The One Receipt program SHALL publish mission and bounded claims.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-002,STR,The One Receipt program SHALL define target outcomes and non-goals.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-003,STR,The One Receipt program SHALL maintain three-year strategy.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-004,STR,The One Receipt program SHALL approve annual objectives and key results.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-005,STR,The One Receipt program SHALL map buyer user regulator and public-interest value.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-006,STR,The One Receipt program SHALL maintain theory of change.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-007,STR,The One Receipt program SHALL define sustainable public-good economics.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-008,STR,The One Receipt program SHALL separate standards activity from commercial services.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-009,STR,The One Receipt program SHALL publish decision principles.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-010,STR,The One Receipt program SHALL maintain risk appetite.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-011,STR,The One Receipt program SHALL prioritize consequential AI transactions.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-012,STR,The One Receipt program SHALL support low-resource implementers.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-013,STR,The One Receipt program SHALL define exit and sunset criteria.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-014,STR,The One Receipt program SHALL measure ecosystem health.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-015,STR,The One Receipt program SHALL publish annual impact report.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-016,STR,The One Receipt program SHALL maintain competitive neutrality.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-017,STR,The One Receipt program SHALL avoid unsupported safety or compliance claims.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-018,STR,The One Receipt program SHALL track regulatory and standards dependencies.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-019,STR,The One Receipt program SHALL review strategy with regional stakeholders.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+STR-020,STR,The One Receipt program SHALL ratify scope changes publicly.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-001,GOV,The One Receipt program SHALL adopt public charter.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-002,GOV,The One Receipt program SHALL separate fiduciary technical public-interest and adoption powers.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-003,GOV,The One Receipt program SHALL publish voting and consensus rules.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-004,GOV,The One Receipt program SHALL maintain conflict-of-interest register.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-005,GOV,The One Receipt program SHALL require recusal on self-interest matters.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-006,GOV,The One Receipt program SHALL cap unrestricted funding concentration.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-007,GOV,The One Receipt program SHALL reserve protected public-interest budget.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-008,GOV,The One Receipt program SHALL publish meeting minutes and decisions.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-009,GOV,The One Receipt program SHALL provide independent appeal route.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-010,GOV,The One Receipt program SHALL define maintainer appointment and removal.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-011,GOV,The One Receipt program SHALL limit permanent founding privileges.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-012,GOV,The One Receipt program SHALL publish trademark policy.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-013,GOV,The One Receipt program SHALL adopt royalty-free patent terms.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-014,GOV,The One Receipt program SHALL adopt code and documentation licenses.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-015,GOV,The One Receipt program SHALL require contribution sign-off.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-016,GOV,The One Receipt program SHALL operate transparent registry governance.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-017,GOV,The One Receipt program SHALL publish annual financial transparency report.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-018,GOV,The One Receipt program SHALL protect whistleblowers and dissent.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-019,GOV,The One Receipt program SHALL review governance effectiveness annually.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+GOV-020,GOV,The One Receipt program SHALL define dissolution and asset disposition.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-001,PAR,The One Receipt program SHALL execute written founding contributor instruments.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-002,PAR,The One Receipt program SHALL recognize OVERT as contributed technical work not a controlling entity.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-003,PAR,The One Receipt program SHALL onboard Glacis subject to conflict controls.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-004,PAR,The One Receipt program SHALL offer equal technical process to competing vendors.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-005,PAR,The One Receipt program SHALL define member classes without pay-to-control.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-006,PAR,The One Receipt program SHALL publish contribution menu.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-007,PAR,The One Receipt program SHALL use nonbinding listening-first invitations.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-008,PAR,The One Receipt program SHALL maintain partner due diligence.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-009,PAR,The One Receipt program SHALL disclose beneficial ownership and affiliations.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-010,PAR,The One Receipt program SHALL prohibit logo use as certification.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-011,PAR,The One Receipt program SHALL require named delegates and alternates.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-012,PAR,The One Receipt program SHALL define cash and in-kind valuation.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-013,PAR,The One Receipt program SHALL publish sponsor restrictions.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-014,PAR,The One Receipt program SHALL create standards liaison process.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-015,PAR,The One Receipt program SHALL create regulator observer role.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-016,PAR,The One Receipt program SHALL fund civil-society participation.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-017,PAR,The One Receipt program SHALL fund Indigenous and regional participation.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-018,PAR,The One Receipt program SHALL create small-implementer microgrants.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-019,PAR,The One Receipt program SHALL measure cohort diversity.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PAR-020,PAR,The One Receipt program SHALL review every partnership annually.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-001,PRD,The One Receipt program SHALL document users jobs pains and evidence rights.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-002,PRD,The One Receipt program SHALL define receipt creation journey.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-003,PRD,The One Receipt program SHALL define verifier journey.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-004,PRD,The One Receipt program SHALL define challenge and remedy journey.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-005,PRD,The One Receipt program SHALL support plain-language views.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-006,PRD,The One Receipt program SHALL meet WCAG 2.2 AA target.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-007,PRD,The One Receipt program SHALL support keyboard and screen-reader use.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-008,PRD,The One Receipt program SHALL support low-bandwidth and offline verification.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-009,PRD,The One Receipt program SHALL localize normative and explanatory content.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-010,PRD,The One Receipt program SHALL provide API chat agent and IDE profiles first.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-011,PRD,The One Receipt program SHALL define voice streaming and on-device later profiles.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-012,PRD,The One Receipt program SHALL display limitations before positive result.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-013,PRD,The One Receipt program SHALL never expose protected content by default.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-014,PRD,The One Receipt program SHALL provide buyer-controlled evidence export.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-015,PRD,The One Receipt program SHALL support representative complaints.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-016,PRD,The One Receipt program SHALL support authorized human review.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-017,PRD,The One Receipt program SHALL provide deletion and retention evidence states.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-018,PRD,The One Receipt program SHALL define usability success metrics.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-019,PRD,The One Receipt program SHALL maintain PRD and PRD-FAQ per release.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRD-020,PRD,The One Receipt program SHALL validate designs with affected users.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-001,PRO,The One Receipt program SHALL define stable envelope identifier.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-002,PRO,The One Receipt program SHALL define bounded transaction identifier.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-003,PRO,The One Receipt program SHALL model events as directed acyclic receipt graph.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-004,PRO,The One Receipt program SHALL version every predicate independently.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-005,PRO,The One Receipt program SHALL declare omitted predicates and reasons.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-006,PRO,The One Receipt program SHALL require transaction predicate.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-007,PRO,The One Receipt program SHALL require policy predicate.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-008,PRO,The One Receipt program SHALL require runtime predicate.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-009,PRO,The One Receipt program SHALL require audit-contestability predicate.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-010,PRO,The One Receipt program SHALL support identity predicate.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-011,PRO,The One Receipt program SHALL support mandate predicate.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-012,PRO,The One Receipt program SHALL support provenance-disclosure predicate.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-013,PRO,The One Receipt program SHALL define critical predicate behavior.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-014,PRO,The One Receipt program SHALL define canonical encoding profile.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-015,PRO,The One Receipt program SHALL define algorithm agility.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-016,PRO,The One Receipt program SHALL define key discovery and status.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-017,PRO,The One Receipt program SHALL define assurance OR-0 through OR-5.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-018,PRO,The One Receipt program SHALL define verifier result vocabulary.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-019,PRO,The One Receipt program SHALL maintain extension registry.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRO-020,PRO,The One Receipt program SHALL publish backward compatibility policy.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-001,IDM,The One Receipt program SHALL bind issuer identity to signing key.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-002,IDM,The One Receipt program SHALL represent operator identity.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-003,IDM,The One Receipt program SHALL represent workload or agent identity.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-004,IDM,The One Receipt program SHALL represent principal binding mode.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-005,IDM,The One Receipt program SHALL allow explicit anonymous or pseudonymous mode.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-006,IDM,The One Receipt program SHALL avoid stable user identifiers by default.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-007,IDM,The One Receipt program SHALL support organizational mandates.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-008,IDM,The One Receipt program SHALL support human mandates.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-009,IDM,The One Receipt program SHALL record mandate scope limits and expiry.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-010,IDM,The One Receipt program SHALL record delegation chain.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-011,IDM,The One Receipt program SHALL record approval authority.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-012,IDM,The One Receipt program SHALL bind mandate to transaction graph.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-013,IDM,The One Receipt program SHALL support revocation status.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-014,IDM,The One Receipt program SHALL prevent confused-deputy delegation.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-015,IDM,The One Receipt program SHALL prevent replay of expired mandates.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-016,IDM,The One Receipt program SHALL map compatible verifiable credentials.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-017,IDM,The One Receipt program SHALL map workload identity systems.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-018,IDM,The One Receipt program SHALL separate bot operator from human principal.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-019,IDM,The One Receipt program SHALL define recovery after key compromise.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+IDM-020,IDM,The One Receipt program SHALL test cross-domain identity substitution.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-001,POL,The One Receipt program SHALL evaluate applicable policy before consequential action.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-002,POL,The One Receipt program SHALL return allow constrain hold escalate or deny.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-003,POL,The One Receipt program SHALL bind policy identifier version and hash.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-004,POL,The One Receipt program SHALL record evaluated control identifiers.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-005,POL,The One Receipt program SHALL record enforcement point.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-006,POL,The One Receipt program SHALL record evidence coverage and gaps.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-007,POL,The One Receipt program SHALL fail closed for missing critical controls.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-008,POL,The One Receipt program SHALL support risk-tier-specific gates.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-009,POL,The One Receipt program SHALL support human approval gates.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-010,POL,The One Receipt program SHALL support emergency break-glass with receipts.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-011,POL,The One Receipt program SHALL prevent policy downgrade without authorization.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-012,POL,The One Receipt program SHALL verify policy package signatures.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-013,POL,The One Receipt program SHALL support jurisdiction overlays.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-014,POL,The One Receipt program SHALL support sector profiles.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-015,POL,The One Receipt program SHALL map OVERT controls without copying governance claims.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-016,POL,The One Receipt program SHALL map NIST ISO and regulatory controls non-normatively.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-017,POL,The One Receipt program SHALL record exceptions and compensating controls.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-018,POL,The One Receipt program SHALL link policy failures to incidents.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-019,POL,The One Receipt program SHALL re-evaluate on material context change.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+POL-020,POL,The One Receipt program SHALL test gate bypass attempts.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-001,RUN,The One Receipt program SHALL record operation boundary.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-002,RUN,The One Receipt program SHALL record model and runtime references.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-003,RUN,The One Receipt program SHALL record tool-call graph.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-004,RUN,The One Receipt program SHALL record environment attestation reference.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-005,RUN,The One Receipt program SHALL record timing with declared clock source.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-006,RUN,The One Receipt program SHALL record retries partial failures and cancellation.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-007,RUN,The One Receipt program SHALL record human review event separately.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-008,RUN,The One Receipt program SHALL record external side effect separately.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-009,RUN,The One Receipt program SHALL record output delivery separately.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-010,RUN,The One Receipt program SHALL record deletion event separately.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-011,RUN,The One Receipt program SHALL record incident linkage separately.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-012,RUN,The One Receipt program SHALL avoid raw prompts and outputs by default.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-013,RUN,The One Receipt program SHALL support disclosure-controlled evidence pointers.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-014,RUN,The One Receipt program SHALL support streaming batch limits.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-015,RUN,The One Receipt program SHALL mark sequence gaps and loss.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-016,RUN,The One Receipt program SHALL bind software and model bill-of-material references.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-017,RUN,The One Receipt program SHALL map OpenTelemetry attributes.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-018,RUN,The One Receipt program SHALL map content provenance identifiers.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-019,RUN,The One Receipt program SHALL support commerce mandate adapters.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+RUN-020,RUN,The One Receipt program SHALL preserve cross-provider correlation without global user tracking.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-001,LOG,The One Receipt program SHALL sign envelopes with approved algorithms.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-002,LOG,The One Receipt program SHALL verify signatures offline.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-003,LOG,The One Receipt program SHALL support cryptographic agility.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-004,LOG,The One Receipt program SHALL maintain key rotation policy.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-005,LOG,The One Receipt program SHALL publish revocation information.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-006,LOG,The One Receipt program SHALL register receipts when profile requires.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-007,LOG,The One Receipt program SHALL provide inclusion proof.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-008,LOG,The One Receipt program SHALL provide consistency proof.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-009,LOG,The One Receipt program SHALL publish signed checkpoints.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-010,LOG,The One Receipt program SHALL support at least two independent witnesses at high assurance.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-011,LOG,The One Receipt program SHALL detect and report equivocation.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-012,LOG,The One Receipt program SHALL freeze assurance on suspected split view.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-013,LOG,The One Receipt program SHALL support cross-log anchoring.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-014,LOG,The One Receipt program SHALL define log outage and backfill behavior.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-015,LOG,The One Receipt program SHALL define retention and deletion semantics.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-016,LOG,The One Receipt program SHALL protect logs from stable personal identifiers.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-017,LOG,The One Receipt program SHALL publish log availability metrics.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-018,LOG,The One Receipt program SHALL publish witness diversity metrics.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-019,LOG,The One Receipt program SHALL perform cryptographic interoperability tests.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+LOG-020,LOG,The One Receipt program SHALL issue incident receipt for key or log compromise.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-001,PRI,The One Receipt program SHALL minimize personal and confidential data.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-002,PRI,The One Receipt program SHALL prohibit raw protected content by default.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-003,PRI,The One Receipt program SHALL prohibit plain hashes of guessable content as privacy claims.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-004,PRI,The One Receipt program SHALL use approved keyed commitments where needed.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-005,PRI,The One Receipt program SHALL rotate commitment secrets.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-006,PRI,The One Receipt program SHALL apply domain separation.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-007,PRI,The One Receipt program SHALL declare linkability scope.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-008,PRI,The One Receipt program SHALL coarsen timing and metadata where feasible.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-009,PRI,The One Receipt program SHALL assess sequence inference risk.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-010,PRI,The One Receipt program SHALL conduct re-identification testing.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-011,PRI,The One Receipt program SHALL define protected evidence disclosure authority.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-012,PRI,The One Receipt program SHALL support threshold disclosure.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-013,PRI,The One Receipt program SHALL support local retention rules.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-014,PRI,The One Receipt program SHALL support cross-border transfer restrictions.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-015,PRI,The One Receipt program SHALL support child-sensitive profile.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-016,PRI,The One Receipt program SHALL support high-risk privacy profile.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-017,PRI,The One Receipt program SHALL support community authority claims.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-018,PRI,The One Receipt program SHALL apply CARE principles for Indigenous data.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-019,PRI,The One Receipt program SHALL provide privacy deletion and correction process.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PRI-020,PRI,The One Receipt program SHALL publish privacy threat model per release.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-001,CON,The One Receipt program SHALL present accessible notice.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-002,CON,The One Receipt program SHALL provide meaningful explanation route.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-003,CON,The One Receipt program SHALL provide challenge channel.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-004,CON,The One Receipt program SHALL publish response service level.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-005,CON,The One Receipt program SHALL offer authorized human review.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-006,CON,The One Receipt program SHALL state reviewer override authority.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-007,CON,The One Receipt program SHALL support correction reversal deletion and referral remedies.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-008,CON,The One Receipt program SHALL issue linked challenge receipt.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-009,CON,The One Receipt program SHALL issue linked review receipt.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-010,CON,The One Receipt program SHALL issue linked remedy receipt.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-011,CON,The One Receipt program SHALL support representative complaint.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-012,CON,The One Receipt program SHALL support public-interest research access.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-013,CON,The One Receipt program SHALL protect complainant confidentiality.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-014,CON,The One Receipt program SHALL avoid requiring public content disclosure.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-015,CON,The One Receipt program SHALL provide multilingual low-bandwidth channel.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-016,CON,The One Receipt program SHALL measure challenge completion time.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-017,CON,The One Receipt program SHALL measure remedy completion rate.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-018,CON,The One Receipt program SHALL publish aggregate unresolved cases.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-019,CON,The One Receipt program SHALL allow Public Interest Council intervention.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+CON-020,CON,The One Receipt program SHALL test deceptive or inaccessible challenge paths.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-001,ARC,The One Receipt program SHALL separate issuer verifier log witness registry and assessor services.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-002,ARC,The One Receipt program SHALL publish context and container diagrams.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-003,ARC,The One Receipt program SHALL define trust boundaries.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-004,ARC,The One Receipt program SHALL use zero-trust service identities.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-005,ARC,The One Receipt program SHALL expose versioned APIs.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-006,ARC,The One Receipt program SHALL support event-driven adapters.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-007,ARC,The One Receipt program SHALL support offline verifier.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-008,ARC,The One Receipt program SHALL support multi-tenant isolation.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-009,ARC,The One Receipt program SHALL support regional deployment.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-010,ARC,The One Receipt program SHALL support sovereign deployment.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-011,ARC,The One Receipt program SHALL support pluggable key management.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-012,ARC,The One Receipt program SHALL support pluggable transparency services.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-013,ARC,The One Receipt program SHALL support evidence vault abstraction.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-014,ARC,The One Receipt program SHALL support registry replication.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-015,ARC,The One Receipt program SHALL design for horizontal scale.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-016,ARC,The One Receipt program SHALL define availability objectives by component.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-017,ARC,The One Receipt program SHALL define disaster recovery objectives.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-018,ARC,The One Receipt program SHALL maintain architecture decision records.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-019,ARC,The One Receipt program SHALL threat-model every boundary.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+ARC-020,ARC,The One Receipt program SHALL avoid mandatory dependence on one vendor.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-001,SDK,The One Receipt program SHALL ship maintained Python SDK.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-002,SDK,The One Receipt program SHALL ship maintained TypeScript SDK.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-003,SDK,The One Receipt program SHALL publish language-neutral test vectors.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-004,SDK,The One Receipt program SHALL provide CLI emitter.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-005,SDK,The One Receipt program SHALL provide CLI offline verifier.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-006,SDK,The One Receipt program SHALL provide browser verification library.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-007,SDK,The One Receipt program SHALL provide SCITT adapter.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-008,SDK,The One Receipt program SHALL provide OVERT mapping adapter.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-009,SDK,The One Receipt program SHALL provide OpenTelemetry adapter.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-010,SDK,The One Receipt program SHALL provide C2PA pointer adapter.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-011,SDK,The One Receipt program SHALL provide verifiable-credential mandate adapter.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-012,SDK,The One Receipt program SHALL provide agent-protocol adapters.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-013,SDK,The One Receipt program SHALL provide webhook integration.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-014,SDK,The One Receipt program SHALL provide key-management examples.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-015,SDK,The One Receipt program SHALL provide transparency sandbox.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-016,SDK,The One Receipt program SHALL provide redacted evidence bundle exporter.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-017,SDK,The One Receipt program SHALL publish migration guides.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-018,SDK,The One Receipt program SHALL use semantic versioning.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-019,SDK,The One Receipt program SHALL generate API documentation.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SDK-020,SDK,The One Receipt program SHALL maintain implementation matrix.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-001,SEC,The One Receipt program SHALL adopt secure development lifecycle.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-002,SEC,The One Receipt program SHALL maintain security policy and private reporting.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-003,SEC,The One Receipt program SHALL perform threat modeling.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-004,SEC,The One Receipt program SHALL enable branch protection.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-005,SEC,The One Receipt program SHALL require two-person review.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-006,SEC,The One Receipt program SHALL require signed releases.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-007,SEC,The One Receipt program SHALL generate software bill of materials.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-008,SEC,The One Receipt program SHALL generate build provenance.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-009,SEC,The One Receipt program SHALL pin CI dependencies.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-010,SEC,The One Receipt program SHALL use least-privilege CI tokens.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-011,SEC,The One Receipt program SHALL enable secret scanning.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-012,SEC,The One Receipt program SHALL enable dependency updates.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-013,SEC,The One Receipt program SHALL run static analysis.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-014,SEC,The One Receipt program SHALL run dependency and vulnerability scanning.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-015,SEC,The One Receipt program SHALL fuzz parsers and canonicalization.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-016,SEC,The One Receipt program SHALL perform annual independent penetration test.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-017,SEC,The One Receipt program SHALL operate coordinated vulnerability disclosure.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-018,SEC,The One Receipt program SHALL publish security advisories.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-019,SEC,The One Receipt program SHALL target OpenSSF best-practices badge.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+SEC-020,SEC,The One Receipt program SHALL monitor OpenSSF Scorecard.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-001,DEV,The One Receipt program SHALL maintain public roadmap.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-002,DEV,The One Receipt program SHALL use issue and pull-request templates.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-003,DEV,The One Receipt program SHALL define code ownership.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-004,DEV,The One Receipt program SHALL use trunk-based protected development.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-005,DEV,The One Receipt program SHALL require acceptance criteria.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-006,DEV,The One Receipt program SHALL link code to requirement identifiers.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-007,DEV,The One Receipt program SHALL automate formatting linting and type checks.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-008,DEV,The One Receipt program SHALL automate unit and integration tests.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-009,DEV,The One Receipt program SHALL maintain reproducible local environment.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-010,DEV,The One Receipt program SHALL provide contributor setup under thirty minutes.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-011,DEV,The One Receipt program SHALL publish coding standards.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-012,DEV,The One Receipt program SHALL review dependencies and licenses.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-013,DEV,The One Receipt program SHALL maintain changelog.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-014,DEV,The One Receipt program SHALL publish release candidates.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-015,DEV,The One Receipt program SHALL use deprecation periods.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-016,DEV,The One Receipt program SHALL support long-term stable core release.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-017,DEV,The One Receipt program SHALL maintain rollback procedure.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-018,DEV,The One Receipt program SHALL triage issues weekly.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-019,DEV,The One Receipt program SHALL track technical debt.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+DEV-020,DEV,The One Receipt program SHALL publish maintainer health metrics.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-001,TST,The One Receipt program SHALL test all schema requirements.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-002,TST,The One Receipt program SHALL test canonicalization edge cases.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-003,TST,The One Receipt program SHALL test signature success and failure.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-004,TST,The One Receipt program SHALL test replay and substitution.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-005,TST,The One Receipt program SHALL test malformed and oversized inputs.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-006,TST,The One Receipt program SHALL test graph cycles and missing parents.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-007,TST,The One Receipt program SHALL test key rotation and revocation.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-008,TST,The One Receipt program SHALL test log inclusion and consistency.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-009,TST,The One Receipt program SHALL test split-view detection.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-010,TST,The One Receipt program SHALL test privacy metadata leakage.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-011,TST,The One Receipt program SHALL test disclosure authorization.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-012,TST,The One Receipt program SHALL test contestability end to end.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-013,TST,The One Receipt program SHALL test accessibility with assistive technology.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-014,TST,The One Receipt program SHALL test localization and right-to-left layouts.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-015,TST,The One Receipt program SHALL test low-bandwidth and offline paths.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-016,TST,The One Receipt program SHALL require two independent implementations.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-017,TST,The One Receipt program SHALL run interoperability events.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-018,TST,The One Receipt program SHALL publish negative results.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-019,TST,The One Receipt program SHALL pre-register high-stakes pilot criteria.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+TST-020,TST,The One Receipt program SHALL maintain conformance claim suspension tests.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-001,PMO,The One Receipt program SHALL define portfolio workstreams.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-002,PMO,The One Receipt program SHALL appoint accountable product and program leads.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-003,PMO,The One Receipt program SHALL maintain integrated roadmap.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-004,PMO,The One Receipt program SHALL maintain RAID log.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-005,PMO,The One Receipt program SHALL maintain decision log.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-006,PMO,The One Receipt program SHALL define stage gates.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-007,PMO,The One Receipt program SHALL plan quarterly increments.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-008,PMO,The One Receipt program SHALL run two-week delivery cadence.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-009,PMO,The One Receipt program SHALL publish monthly status.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-010,PMO,The One Receipt program SHALL manage scope change formally.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-011,PMO,The One Receipt program SHALL track dependencies across standards venues.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-012,PMO,The One Receipt program SHALL maintain resource and capacity plan.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-013,PMO,The One Receipt program SHALL maintain budget forecast.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-014,PMO,The One Receipt program SHALL define procurement and vendor controls.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-015,PMO,The One Receipt program SHALL manage pilots with data agreements.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-016,PMO,The One Receipt program SHALL maintain quality management plan.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-017,PMO,The One Receipt program SHALL maintain communications plan.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-018,PMO,The One Receipt program SHALL conduct retrospectives.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-019,PMO,The One Receipt program SHALL archive evidence of decisions.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+PMO-020,PMO,The One Receipt program SHALL prepare operational handoff.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-001,MKT,The One Receipt program SHALL adopt clear category narrative.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-002,MKT,The One Receipt program SHALL use bounded evidence claims.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-003,MKT,The One Receipt program SHALL publish messaging guide.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-004,MKT,The One Receipt program SHALL prohibit safety compliance and certification overclaims.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-005,MKT,The One Receipt program SHALL maintain public website and documentation portal.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-006,MKT,The One Receipt program SHALL publish implementation case studies including failures.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-007,MKT,The One Receipt program SHALL run practitioner community program.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-008,MKT,The One Receipt program SHALL launch regional chapters with local authority.,P0,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-009,MKT,The One Receipt program SHALL provide translation glossary.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-010,MKT,The One Receipt program SHALL offer free practitioner fundamentals.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-011,MKT,The One Receipt program SHALL develop advanced maintainer and assessor curricula.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-012,MKT,The One Receipt program SHALL host interoperability demonstrations.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-013,MKT,The One Receipt program SHALL publish buyer procurement toolkit.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-014,MKT,The One Receipt program SHALL publish analyst and media FAQ.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-015,MKT,The One Receipt program SHALL operate transparent launch readiness checklist.,P1,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-016,MKT,The One Receipt program SHALL maintain crisis communications plan.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-017,MKT,The One Receipt program SHALL measure adoption without vanity-only metrics.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-018,MKT,The One Receipt program SHALL recognize contributors equitably.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-019,MKT,The One Receipt program SHALL avoid founding logo wall before balanced cohort.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed
+MKT-020,MKT,The One Receipt program SHALL publish annual global community report.,P2,"documented artifact, automated test, published record, or independent review",TBD by charter,proposed

@@ -1,0 +1,108 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aigovops-foundation.github.io/One-ai-Receipt-aigovops-foundation/spec/schema/predicates/provenance-disclosure.schema.json",
+  "title": "Provenance and disclosure predicate 1.0",
+  "description": "What left the system, how it was marked, and whether the AI nature was disclosed.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "ai_disclosed",
+    "output_kind"
+  ],
+  "properties": {
+    "ai_disclosed": {
+      "type": "boolean"
+    },
+    "disclosure_channel": {
+      "enum": [
+        "visible-text",
+        "spoken",
+        "header",
+        "manifest",
+        "label",
+        "none"
+      ]
+    },
+    "output_kind": {
+      "enum": [
+        "text",
+        "code",
+        "image",
+        "audio",
+        "video",
+        "action",
+        "mixed",
+        "none"
+      ]
+    },
+    "manifest": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "scheme": {
+          "enum": [
+            "c2pa",
+            "iptc",
+            "china-reference-number",
+            "none"
+          ]
+        },
+        "manifest_commitment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "scheme",
+            "value"
+          ],
+          "properties": {
+            "scheme": {
+              "enum": [
+                "salted-sha256",
+                "hmac-sha256",
+                "pedersen"
+              ]
+            },
+            "value": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_-]{16,}$"
+            },
+            "salt_ref": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "description": "A commitment to content the receipt never carries. Plain hashes are not permitted."
+        },
+        "reference_number": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "formats": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "plain-language",
+              "screen-reader",
+              "audio",
+              "large-print",
+              "sign-language"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

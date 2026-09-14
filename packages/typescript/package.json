@@ -1,0 +1,10 @@
+{
+  "name": "@one-receipt/types",
+  "version": "0.2.0-draft",
+  "private": true,
+  "type": "module",
+  "description": "TypeScript contract for One Receipt envelopes and predicates (spec v0.2-draft)",
+  "license": "Apache-2.0",
+  "scripts": { "test": "tsc --noEmit" },
+  "devDependencies": { "typescript": "^5.6.0" }
+}
