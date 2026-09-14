@@ -15,7 +15,7 @@ import json
 import os
 import re
 import uuid
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -50,7 +50,7 @@ LIMITATIONS = [
     "Commitments are content-free; a verifier cannot recover prompts, outputs, weights or personal data from this receipt.",
     "Assurance above OR-2 depends on an independent log and witnesses; the verified level is what the verifier could substantiate, not what the issuer claimed.",
 ]
-_PERSONAL = re.compile(r"(@|\b\d{1,3}(\.\d{1,3}){3}\b|\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b)", re.I)
+_PERSONAL = re.compile(r"(@|\b\d{1,3}(\.\d{1,3}){3}\b|\b[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}\b)", re.IGNORECASE)
 
 
 # --------------------------------------------------------------------------- canonical form
@@ -82,7 +82,7 @@ def _unb64u(text: str) -> bytes:
 
 
 def _now() -> str:
-    return datetime.now(timezone.utc).isoformat(timespec="seconds").replace("+00:00", "Z")
+    return datetime.now(UTC).isoformat(timespec="seconds").replace("+00:00", "Z")
 
 
 def new_urn(kind: str = "r") -> str:
@@ -277,7 +277,7 @@ def verify_receipt(receipt: dict, public_pem: bytes | None = None, schema_path: 
                 raise ValueError("reference verifier supports Ed25519 keys only")
             key.verify(_unb64u(receipt["signature"]["value"]), canonical_bytes(unsigned))
             checks["signature"] = True
-        except Exception as exc:  # noqa: BLE001 — every failure is a verification failure
+        except Exception as exc:  # every failure is a verification failure
             checks["signature"] = False
             errors.append(f"signature: {type(exc).__name__}")
 
@@ -340,10 +340,9 @@ def verify_receipt(receipt: dict, public_pem: bytes | None = None, schema_path: 
     # --- assurance ladder
     witness = predicates.get("witness")
     issuer_id = receipt["issuer"]["id"]
-    if ceiling >= 2:
-        if not witness or "inclusion_proof" not in witness:
-            warnings.append("OR-2 needs a log inclusion proof; capped at OR-1")
-            ceiling = min(ceiling, 1)
+    if ceiling >= 2 and (not witness or "inclusion_proof" not in witness):
+        warnings.append("OR-2 needs a log inclusion proof; capped at OR-1")
+        ceiling = min(ceiling, 1)
     if ceiling >= 3 and witness:
         independent = witness["log_operator"]["id"] != issuer_id
         witnessed = bool(witness.get("witnesses"))
@@ -370,9 +369,9 @@ def verify_receipt(receipt: dict, public_pem: bytes | None = None, schema_path: 
 
     # --- contestability sanity for consequential events
     contest = predicates.get("contestability")
-    if contest and receipt["transaction_type"] in {"policy-decision", "output-delivery", "human-review"}:
-        if contest["human_review"]["available"] and contest["human_review"].get("reviewer_authority") == "none":
-            warnings.append("contestability: human review is offered but the reviewer has no authority")
+    consequential = receipt["transaction_type"] in {"policy-decision", "output-delivery", "human-review"}
+    if contest and consequential and contest["human_review"]["available"] and contest["human_review"].get("reviewer_authority") == "none":
+        warnings.append("contestability: human review is offered but the reviewer has no authority")
     checks["limitations"] = len(limitations) > 0
 
     valid = not errors

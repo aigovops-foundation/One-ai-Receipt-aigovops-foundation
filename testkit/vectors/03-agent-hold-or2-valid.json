@@ -3,17 +3,17 @@
   "case": "VH-056 Knight Capital",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:f6385973-89d4-4a41-83af-d755593f0a5d",
-    "transaction_id": "urn:one-receipt:t:fd493387-37d9-4157-8ef7-fd2d98c6a0a6",
-    "event_id": "urn:one-receipt:e:87fd56fd-d1c2-485c-a443-85c1776b821e",
+    "receipt_id": "urn:one-receipt:r:2e1d87f3-c12b-4d6a-9434-5e0787e86a7e",
+    "transaction_id": "urn:one-receipt:t:f8b5a177-828e-4feb-9fcf-1daa53e04ff2",
+    "event_id": "urn:one-receipt:e:115c1076-5644-41ac-a87f-6cc2fffdf063",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:f6385973-89d4-4a41-83af-d755593f0a5d",
+    "root_receipt_id": "urn:one-receipt:r:2e1d87f3-c12b-4d6a-9434-5e0787e86a7e",
     "transaction_type": "policy-decision",
     "sequence": 0,
     "boundary": "agent-action",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
-    "issued_at": "2026-09-14T16:55:24Z",
+    "issued_at": "2026-09-14T17:12:08Z",
     "clock_source": "issuer",
     "issuer": {
       "id": "did:web:cafe.aigovops-foundation.example",
@@ -177,7 +177,7 @@
       "algorithm": "Ed25519",
       "canonicalization": "JCS",
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-      "value": "hyd5NcT2rJgQBTlZIVjNOgEknkSkPNP1H6GYgw5i0V1vJ6xS2E7QqMWxZRxX1S52sm5jINFpIaWMjiuM3GUuDQ"
+      "value": "A6VIQzwCOb9lbsEKsocvIGxAvvEjWZqI7nQWuRS-yzQdZ7Zu9PdfNhtefPgdRXi8M08uMmP_hpGkxyy3jBMhBw"
     },
     "extensions": {
       "aigovops.corpus": {

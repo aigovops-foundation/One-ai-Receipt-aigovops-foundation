@@ -3,17 +3,17 @@
   "case": "VH-088 Horizon",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:fc6bdf68-11f8-4ef6-8567-2ddbd55a9b45",
-    "transaction_id": "urn:one-receipt:t:202ea5e5-b602-4012-b43d-660f08620da9",
-    "event_id": "urn:one-receipt:e:f744c5fa-0341-48ef-97b4-f5e5c72b83f9",
+    "receipt_id": "urn:one-receipt:r:52ca3348-1f75-4560-8443-9f55186050bd",
+    "transaction_id": "urn:one-receipt:t:c749a831-436d-4538-9bd2-c6c442f916ba",
+    "event_id": "urn:one-receipt:e:96a9d2dd-6c2b-448c-9e1f-798c640f0cdc",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:fc6bdf68-11f8-4ef6-8567-2ddbd55a9b45",
+    "root_receipt_id": "urn:one-receipt:r:52ca3348-1f75-4560-8443-9f55186050bd",
     "transaction_type": "inference",
     "sequence": 0,
     "boundary": "request-response",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
-    "issued_at": "2026-09-14T16:55:24Z",
+    "issued_at": "2026-09-14T17:12:08Z",
     "clock_source": "issuer",
     "issuer": {
       "id": "did:web:cafe.aigovops-foundation.example",
@@ -182,7 +182,7 @@
       "algorithm": "Ed25519",
       "canonicalization": "JCS",
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-      "value": "PC-CHE23cSR4FEXPVW5Cf6RpcTgM2Is7VSi1XFp4bUcUxQkTJ_FUJnU3dv3Fz-dsJCxjOsQTEHdW0b6CtzPfDg"
+      "value": "E6MSLrF7mi421XOWS6G9NQk5QieWjq4nAtBrJVQLBlT7mTQGFaFdYaPQ1jK9ji7_aR4W6P8GBn6Z9w1Dx2mLBA"
     },
     "extensions": {
       "aigovops.corpus": {

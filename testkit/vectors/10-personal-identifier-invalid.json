@@ -3,17 +3,17 @@
   "case": "VH-015 Arup",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:3665db3b-98f2-47f9-acd3-11391d761012",
-    "transaction_id": "urn:one-receipt:t:cdf0daef-4837-46bd-9b1a-36eaa3ce3294",
-    "event_id": "urn:one-receipt:e:30851975-3c57-4878-a5e9-896c138ddf18",
+    "receipt_id": "urn:one-receipt:r:e34cdbf0-0fff-40f9-ac1a-8f10cda38767",
+    "transaction_id": "urn:one-receipt:t:3da7b585-eb6f-4456-8bad-81e1e34bb6a9",
+    "event_id": "urn:one-receipt:e:89adc682-4762-4c11-9770-3ab1eef16663",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:3665db3b-98f2-47f9-acd3-11391d761012",
+    "root_receipt_id": "urn:one-receipt:r:e34cdbf0-0fff-40f9-ac1a-8f10cda38767",
     "transaction_type": "inference",
     "sequence": 0,
     "boundary": "request-response",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
-    "issued_at": "2026-09-14T16:55:24Z",
+    "issued_at": "2026-09-14T17:12:08Z",
     "clock_source": "issuer",
     "issuer": {
       "id": "did:web:cafe.aigovops-foundation.example",
@@ -143,7 +143,7 @@
       "algorithm": "Ed25519",
       "canonicalization": "JCS",
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-      "value": "QxlqEa5QVCxLu6wYyAgMjnhhzhPRJ4b_CDliGg-O61zhdIlndgt3iRIraoetYIAgA4u1gh1dkqp9X8GNe_nKBA"
+      "value": "5Vn8MlVyQa7jHEayDGU9C8mLhIW_icypjn0pELpqBrv_5iILxX1v8hXwdedCq5w9naQMEVB9tWsIMgWe9OggDQ"
     },
     "extensions": {
       "aigovops.corpus": {

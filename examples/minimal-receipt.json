@@ -1,16 +1,16 @@
 {
   "spec_version": "0.2-draft",
-  "receipt_id": "urn:one-receipt:r:d9c78c59-4036-447e-8dfa-1348c59f23d0",
-  "transaction_id": "urn:one-receipt:t:d69a4380-f8dc-46aa-9683-3b57d2ef38f6",
-  "event_id": "urn:one-receipt:e:2787e4d0-b3c3-477d-b4bd-2615fb0e9beb",
+  "receipt_id": "urn:one-receipt:r:6671cec7-ecc1-48c9-bb9f-2fbe81316ae5",
+  "transaction_id": "urn:one-receipt:t:30d0dfd9-0704-42ad-b08c-fe8f8a1f314c",
+  "event_id": "urn:one-receipt:e:0341118a-ad98-4046-b899-c8f6b4fdc84c",
   "parent_receipt_ids": [],
-  "root_receipt_id": "urn:one-receipt:r:d9c78c59-4036-447e-8dfa-1348c59f23d0",
+  "root_receipt_id": "urn:one-receipt:r:6671cec7-ecc1-48c9-bb9f-2fbe81316ae5",
   "transaction_type": "inference",
   "sequence": 0,
   "boundary": "request-response",
-  "started_at": "2026-09-14T16:55:24Z",
-  "ended_at": "2026-09-14T16:55:24Z",
-  "issued_at": "2026-09-14T16:55:24Z",
+  "started_at": "2026-09-14T17:12:08Z",
+  "ended_at": "2026-09-14T17:12:08Z",
+  "issued_at": "2026-09-14T17:12:08Z",
   "clock_source": "issuer",
   "issuer": {
     "id": "did:web:cafe.aigovops-foundation.example",
@@ -83,6 +83,6 @@
     "algorithm": "Ed25519",
     "canonicalization": "JCS",
     "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-    "value": "DrrzRlmuqTUVKMeACQIkXfTxbBx1Lma5XuwUyqjl3OAsU01KHH87bibKGqbpXrd1Lp80CAJWRPxMDLdc-9XIDQ"
+    "value": "BANb4beDvpAD65w2QLphzExvvq5mmhLTUxTaVakEOwhw8xMsoC6mPiJKkq3kAW1Mwkqh3_0FSnCh60D17JTkDw"
   }
 }
