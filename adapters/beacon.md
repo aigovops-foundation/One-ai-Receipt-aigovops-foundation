@@ -22,3 +22,5 @@
 New on every consequential receipt: `contestability` (Beacon's `/studio` shows the notice and the challenge route; `human_review.reviewer_authority` comes from the gate's escalation rule). New on every receipt: `privacy_profile`, `predicate_manifest`, `limitations`.
 
 **Tests.** Beacon's CI runs `one-receipt vectors` and verifies its own emitted receipts with the reference verifier; the verified level must equal the claimed level on every Beacon receipt or the build fails.
+
+**SAIL.** Beacon's inventory is the evidence for SAIL 2.1/2.2/2.6 and its per-interaction receipt for 7.1; tag `gate.evaluated` controls with `vocabulary: sail`, add SAIL ids to the checklist packs, and note that SAIL 5.7/7.4 (insecure telemetry) is the security case for dropping the OIDC subject and plain hashes. Crosswalk: `spec/crosswalks/sail-v2.md`.

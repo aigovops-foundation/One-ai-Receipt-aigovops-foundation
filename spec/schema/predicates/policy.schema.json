@@ -89,6 +89,8 @@
               "aicm",
               "iso-42001",
               "nist-ai-rmf",
+              "owasp-agentic",
+              "sail",
               "local"
             ]
           },

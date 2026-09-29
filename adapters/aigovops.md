@@ -8,3 +8,5 @@
 - Emits an `agent-delegation` receipt for every hand-off between agents with `identity.agent`, `transaction.delegation_depth` and the mandate inherited by `mandate.mandate_ref`; the mandate scope never widens down the chain.
 - Closes streams and batches with an `aggregate` receipt that names every segment or declares `dropped_events_declared`.
 - Runs `verify_graph` before reporting a task complete and records the weakest verified level in the task log.
+
+**SAIL.** Jeeves's receipts are the evidence for SAIL 2.7 (topology), 5.18 (A2A impersonation), 5.20 (confused deputy) and 7.7 (decommissioning — a closing receipt with `extensions.aigovops.lifecycle: retired` until v0.3 adds `lifecycle-event`).

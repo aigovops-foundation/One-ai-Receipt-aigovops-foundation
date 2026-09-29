@@ -8,3 +8,5 @@
 - The signed evidence bundle's signature is attached as a `countersignature` with role `reviewer`; the bundle id goes to `controls[].evidence_ref`.
 - UCID is registered as a control vocabulary in `spec/registries`; the UCID ↔ OVERT ↔ AIUC-1 ↔ AICM crosswalk lives here and is contributed upstream.
 - Umbrella never signs `inference` receipts; it declares and gates. Beacon signs what ran.
+
+**SAIL.** Add SAIL as a target framework in the policy YAML so a UCID can cite the SAIL risk it mitigates (1.12/3.16 at build, 5.13 at runtime) and packs can be generated in SAIL's language.

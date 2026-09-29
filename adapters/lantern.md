@@ -10,3 +10,5 @@
 - Gate lenses (Lantern #9) read `policy.decision` and `policy.controls[]` by vocabulary.
 - Never shows a receipt as "anonymous" or "certified"; shows OR-4/OR-5 only after a registry lookup it performed.
 - Reads the v0.1-era Beacon/Replay format through `adapters/replay.md` and labels it "legacy — OR-0".
+
+**SAIL.** A "SAIL view" of a graph: for each risk in `spec/crosswalks/sail-v2.md`, evidence present / omission declared / silent.

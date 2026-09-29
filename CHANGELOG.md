@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.2.1 — 2026-09-29
+
+- SAIL review (`docs/reviews/2026-09-29-sail.md`): `sail` and `owasp-agentic` added to control vocabularies (schema, TypeScript, spec); crosswalk `spec/crosswalks/sail-v2.md` (by id only — SAIL is CC BY-NC-SA); SAIL row in the delta matrix; vector 13 (Knight Capital held action carrying SAIL 5.13 / 6.14). Proposed for v0.3: `transaction_type: lifecycle-event` for agent decommissioning (SAIL 7.7).
+
 ## 0.2.0 — 2026-09-14 (seed, gate G0)
 
 Built from the v0.1 starter, the v0.2 recommended amendments, the coalition invitation and funding playbook, and the complete product plan.
