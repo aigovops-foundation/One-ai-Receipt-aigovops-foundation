@@ -9,3 +9,5 @@
 - The ten corpus cases chosen under decision 8 are the canonical vectors; `testkit/vectors` already seeds VH-001, VH-013, VH-015, VH-022, VH-035, VH-056, VH-088.
 - The Thursday host's file gains one line: the receipt id of the call's mark receipt, so every Thursday is itself a verifiable event.
 - `docs/reference/ONE-RECEIPT.md` in practice points to this repository as the source of truth and keeps the v0.1 paper as history.
+
+**SAIL.** Knight Capital is SAIL 6.14, Air Canada is 5.10 — add the ids to those case cards and the level-300 worksheet; SAIL 6.13 (approval fatigue) is a Thursday topic.

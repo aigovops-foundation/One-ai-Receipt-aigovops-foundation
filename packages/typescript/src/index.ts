@@ -63,7 +63,7 @@ export interface PolicyPredicate {
   decision: "allow" | "constrain" | "hold" | "escalate" | "deny";
   enforcement_point: "pre-action" | "in-flight" | "post-action" | "review";
   policy_commitment?: Commitment; tier?: string;
-  controls?: { id: string; vocabulary?: "ucid" | "overt" | "aiuc-1" | "aicm" | "iso-42001" | "nist-ai-rmf" | "local"; outcome: "pass" | "fail" | "skipped" | "error"; evidence_ref?: string }[];
+  controls?: { id: string; vocabulary?: "ucid" | "overt" | "aiuc-1" | "aicm" | "iso-42001" | "nist-ai-rmf" | "owasp-agentic" | "sail" | "local"; outcome: "pass" | "fail" | "skipped" | "error"; evidence_ref?: string }[];
   human_in_loop?: "none" | "notified" | "approved" | "overrode"; risk_class?: string; jurisdiction_refs?: string[];
 }
 export interface RuntimePredicate {

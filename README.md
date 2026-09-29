@@ -23,7 +23,7 @@ The demonstration keys in `examples/` are for the vectors only. Production deplo
 |---|---|
 | `spec/ONE-RECEIPT-SPEC.md` | The core specification: bounded claims, envelope, transaction graph, ten predicates, privacy threat model, witnessing and equivocation, contestability, OR-0…OR-5 computed by the verifier, four separated roles, interface profiles, legal-evidence profile, conformance layers |
 | `spec/schema/` | JSON Schema 2020-12 for the envelope and every predicate |
-| `spec/delta-matrix.md` | What One Receipt takes from, adds to, and leaves alone in SCITT, OVERT, OpenTelemetry, C2PA, AP2, AIUC-1, VC/DID, the EU AI Act and the Foundation's own projects |
+| `spec/delta-matrix.md` · `spec/crosswalks/` | What One Receipt takes from, adds to, and leaves alone in SCITT, OVERT, OpenTelemetry, C2PA, AP2, AIUC-1, VC/DID, the EU AI Act and the Foundation's own projects |
 | `src/one_receipt/` | Reference signer, verifier (single receipt and graph), commitments, CLI, vector runner |
 | `packages/typescript/` | The TypeScript contract (types); an SDK follows once it passes the vectors |
 | `testkit/vectors/` | Twelve test vectors from the Foundation's corpus cases (Air Canada, Knight Capital, Robodebt, Cigna, Horizon, Arup, the $1 Tahoe) with the verdict a conformant verifier must reach |

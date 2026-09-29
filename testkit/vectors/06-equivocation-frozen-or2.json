@@ -3,17 +3,17 @@
   "case": "VH-013 Robodebt",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:1f1682c6-1393-4c88-a4cc-5fc654ba5fe1",
-    "transaction_id": "urn:one-receipt:t:f5b81b37-536d-4dc5-be11-2f1c52a151b6",
-    "event_id": "urn:one-receipt:e:cd4b9fd4-168e-485e-bcc1-92352620cd14",
+    "receipt_id": "urn:one-receipt:r:0fe6a13c-e58f-4875-b888-be0869947f3f",
+    "transaction_id": "urn:one-receipt:t:383e7900-d0b6-4791-b1f8-0af198f0c906",
+    "event_id": "urn:one-receipt:e:92d4a130-6baf-4e02-a757-c7dc7f4184ee",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:1f1682c6-1393-4c88-a4cc-5fc654ba5fe1",
+    "root_receipt_id": "urn:one-receipt:r:0fe6a13c-e58f-4875-b888-be0869947f3f",
     "transaction_type": "policy-decision",
     "sequence": 0,
     "boundary": "batch",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
-    "issued_at": "2026-09-14T17:12:08Z",
+    "issued_at": "2026-09-29T16:20:52Z",
     "clock_source": "issuer",
     "issuer": {
       "id": "did:web:cafe.aigovops-foundation.example",
@@ -184,7 +184,7 @@
       "algorithm": "Ed25519",
       "canonicalization": "JCS",
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-      "value": "halcYouPp1VRPajLlXuxhYD5vy-6S2doik3vZ6uJxHd7DjjSCrt3LOJBShIS5dVrg-a6rOO7feJLph0BRYynAA"
+      "value": "_10SvIkg4v1clioLx3-IwtspxvarURhDV2V2Poq2hFdQp3DTu3LknhvZgZzxTDuPvIu9T1sk_VdXWNiIpGyKAA"
     },
     "extensions": {
       "aigovops.corpus": {

@@ -222,4 +222,4 @@ def test_vectors_pass():
     from one_receipt.vectors import run_vectors
 
     report = run_vectors(ROOT / "testkit" / "vectors")
-    assert report["total"] >= 8 and report["failed"] == 0, json.dumps(report, indent=1)
+    assert report["total"] >= 13 and report["failed"] == 0, json.dumps(report, indent=1)

@@ -3,17 +3,17 @@
   "case": "VH-022 Chevrolet of Watsonville",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:b34230cb-7b5f-40e6-afa5-4154bebf6899",
-    "transaction_id": "urn:one-receipt:t:2ad863e6-6a69-4912-a800-eeda9b1dd7b7",
-    "event_id": "urn:one-receipt:e:b3934f31-8752-453f-9ed4-19429e17dfdd",
+    "receipt_id": "urn:one-receipt:r:a99a6ae0-b5cd-44a0-911e-f8f8443b201f",
+    "transaction_id": "urn:one-receipt:t:8f01dfb6-415b-4bed-907f-9af1fdc7d0dc",
+    "event_id": "urn:one-receipt:e:ed762fc9-ae43-42bb-9496-eee864e2c567",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:b34230cb-7b5f-40e6-afa5-4154bebf6899",
+    "root_receipt_id": "urn:one-receipt:r:a99a6ae0-b5cd-44a0-911e-f8f8443b201f",
     "transaction_type": "output-delivery",
     "sequence": 0,
     "boundary": "request-response",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
-    "issued_at": "2026-09-14T17:12:08Z",
+    "issued_at": "2026-09-29T16:20:52Z",
     "clock_source": "issuer",
     "issuer": {
       "id": "did:web:cafe.aigovops-foundation.example",
@@ -151,7 +151,7 @@
       "algorithm": "Ed25519",
       "canonicalization": "JCS",
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-      "value": "M4XoAB5mSvfybMet8pbOfPrA5r0iR4bvAuFjX0rfOikn18JkFeHZJiUegD2p2_wIbIWo1e2-fttOChCr7ziQBQ"
+      "value": "OZpiw_kndGnC_YZZAeFQENW_lZyQ0_32nLj0yzF9VX5G6_GH1TQyJf9Zlov_RV3PJIJzTZrnUnXfEKRWXRQlBw"
     },
     "extensions": {
       "aigovops.corpus": {

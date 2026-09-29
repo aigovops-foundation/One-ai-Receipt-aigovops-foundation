@@ -122,6 +122,11 @@ p = base("VH-022", "commerce", {"decision": "allow", "controls": [{"id": "UCID-P
 p["predicates"]["mandate"] = {"scheme": "ap2-cart", "scope": "quote a vehicle at list price", "within_mandate": "no", "mandate_ref": "ap2:cart:demo"}
 add("11-commerce-outside-mandate-valid", "VH-022 Chevrolet of Watsonville", emit(p, assurance="OR-1", transaction_type="output-delivery"), {"valid": True, "verified_level": "OR-1"})
 
+# 13 — VH-056 again through SAIL's eyes: per-action authorisation (SAIL 5.13) held the trade; reversal was a named remedy (SAIL 6.14)
+p = base("VH-056", "agent-to-agent", {"decision": "hold", "tier": "sail:tier-2", "controls": [{"id": "SAIL 5.13", "vocabulary": "sail", "outcome": "pass"}, {"id": "SAIL 6.14", "vocabulary": "sail", "outcome": "pass"}, {"id": "UCID-KILL-SWITCH", "vocabulary": "ucid", "outcome": "pass"}], "human_in_loop": "approved"}, extra={"witness": witness()})
+p["predicates"]["contestability"]["remedy"] = {"types": ["reversal", "correction"], "collective_redress": False}
+add("13-sail-controls-or3-valid", "VH-056 Knight Capital", emit(p, assurance="OR-3", transaction_type="policy-decision", boundary="agent-action"), {"valid": True, "verified_level": "OR-3"})
+
 # 12 — unsigned export: OR-0 only
 p = base("VH-001", "chat", {"decision": "allow"})
 add("12-unsigned-export-or0", "VH-001 Air Canada", emit(p, assurance="OR-0"), {"valid": True, "verified_level": "OR-0"})

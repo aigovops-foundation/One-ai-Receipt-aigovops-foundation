@@ -3,17 +3,17 @@
   "case": "VH-035 Cigna",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:357bc4de-41b0-478f-ac14-a5b5a0b23ee2",
-    "transaction_id": "urn:one-receipt:t:82453340-6894-4ff0-be9d-272251814c32",
-    "event_id": "urn:one-receipt:e:5cd16fd8-bc6c-4ce2-ae96-9db677434f2e",
+    "receipt_id": "urn:one-receipt:r:4167a10c-c440-4004-981f-cc7f7403d74f",
+    "transaction_id": "urn:one-receipt:t:b5e0b4a9-4224-4edc-b305-50a66a133c9e",
+    "event_id": "urn:one-receipt:e:a89906c7-e311-42cd-834e-32492a876969",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:357bc4de-41b0-478f-ac14-a5b5a0b23ee2",
+    "root_receipt_id": "urn:one-receipt:r:4167a10c-c440-4004-981f-cc7f7403d74f",
     "transaction_type": "policy-decision",
     "sequence": 0,
     "boundary": "batch",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
-    "issued_at": "2026-09-14T17:12:08Z",
+    "issued_at": "2026-09-29T16:20:52Z",
     "clock_source": "issuer",
     "issuer": {
       "id": "did:web:cafe.aigovops-foundation.example",
@@ -145,7 +145,7 @@
       "algorithm": "Ed25519",
       "canonicalization": "JCS",
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-      "value": "5q5mr2e-2FUxH1sD26dxzhY5tmbAshU_RZPSrV9d-W72Yk7zD2-f3BhLhdhpHLsPhivn5AS7T-JyZacGre3oBg"
+      "value": "VnVR5Grd07ttgixq1xaOi3h4yMAPK_AH19oxU4ei6NQnVH8SUmfcmfx1romfMbhoGXN5aReD5ZJZlbf3rxouDg"
     },
     "extensions": {
       "aigovops.corpus": {

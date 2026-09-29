@@ -3,17 +3,17 @@
   "case": "VH-001 Air Canada",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:455cd9e9-ea49-4a9a-8a12-7517a282fcb4",
-    "transaction_id": "urn:one-receipt:t:afb0817f-d37a-423b-81b8-a612f8c23aa3",
-    "event_id": "urn:one-receipt:e:8e7a6762-4869-4bcb-b996-b2bb13b99dac",
+    "receipt_id": "urn:one-receipt:r:a5363794-18cb-4696-b178-7a4e6bf725dd",
+    "transaction_id": "urn:one-receipt:t:036ab4d1-f0e2-4093-ae71-cc1b6e5e5e45",
+    "event_id": "urn:one-receipt:e:b145298c-9fec-45e2-b767-571896174be7",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:455cd9e9-ea49-4a9a-8a12-7517a282fcb4",
+    "root_receipt_id": "urn:one-receipt:r:a5363794-18cb-4696-b178-7a4e6bf725dd",
     "transaction_type": "inference",
     "sequence": 0,
     "boundary": "request-response",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
-    "issued_at": "2026-09-14T17:12:08Z",
+    "issued_at": "2026-09-29T16:20:52Z",
     "clock_source": "issuer",
     "issuer": {
       "id": "did:web:cafe.aigovops-foundation.example",
@@ -127,8 +127,8 @@
         },
         "remedy": {
           "types": [
-            "correction",
-            "reversal"
+            "reversal",
+            "correction"
           ],
           "collective_redress": false
         }

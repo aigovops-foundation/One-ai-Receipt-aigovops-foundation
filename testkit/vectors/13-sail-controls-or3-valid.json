@@ -1,16 +1,16 @@
 {
   "spec_version": "0.2-draft",
-  "case": "VH-088 Horizon",
+  "case": "VH-056 Knight Capital",
   "receipt": {
     "spec_version": "0.2-draft",
-    "receipt_id": "urn:one-receipt:r:1d5c7dfb-403b-45da-9315-dadf0997d153",
-    "transaction_id": "urn:one-receipt:t:c08137b3-e424-4374-a0ac-93742822636f",
-    "event_id": "urn:one-receipt:e:2ac0ebf1-bc64-4477-a66e-2bc667886c9f",
+    "receipt_id": "urn:one-receipt:r:6e18f256-b583-45ab-aee4-9da2ae017497",
+    "transaction_id": "urn:one-receipt:t:5194171f-10fa-4cfa-ade4-09c10cc46bc2",
+    "event_id": "urn:one-receipt:e:e75e32d0-7a33-42fd-a19c-bde9b8997aa6",
     "parent_receipt_ids": [],
-    "root_receipt_id": "urn:one-receipt:r:1d5c7dfb-403b-45da-9315-dadf0997d153",
-    "transaction_type": "inference",
+    "root_receipt_id": "urn:one-receipt:r:6e18f256-b583-45ab-aee4-9da2ae017497",
+    "transaction_type": "policy-decision",
     "sequence": 0,
-    "boundary": "request-response",
+    "boundary": "agent-action",
     "started_at": "2026-09-14T15:00:00Z",
     "ended_at": "2026-09-14T15:00:02Z",
     "issued_at": "2026-09-29T16:20:52Z",
@@ -20,7 +20,7 @@
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
       "role": "operator"
     },
-    "assurance_level": "OR-4",
+    "assurance_level": "OR-3",
     "privacy_profile": {
       "profile": "content-free",
       "commitment_scheme": "salted-sha256",
@@ -71,12 +71,12 @@
     ],
     "predicates": {
       "transaction": {
-        "interface": "embedded",
+        "interface": "agent-to-agent",
         "id_carrier": "response-header"
       },
       "identity": {
         "principal_binding_mode": "pseudonymous",
-        "principal_ref": "pseud:vh-088",
+        "principal_ref": "pseud:vh-056",
         "operator_id": "did:web:cafe.aigovops-foundation.example",
         "model": {
           "ref": "example:model",
@@ -89,17 +89,29 @@
         "within_mandate": "yes"
       },
       "policy": {
-        "policy_id": "corpus-VH-088",
+        "policy_id": "corpus-VH-056",
         "version": "1",
         "enforcement_point": "pre-action",
-        "decision": "allow",
+        "decision": "hold",
+        "tier": "sail:tier-2",
         "controls": [
           {
-            "id": "UCID-LEDGER-RECONCILE",
+            "id": "SAIL 5.13",
+            "vocabulary": "sail",
+            "outcome": "pass"
+          },
+          {
+            "id": "SAIL 6.14",
+            "vocabulary": "sail",
+            "outcome": "pass"
+          },
+          {
+            "id": "UCID-KILL-SWITCH",
             "vocabulary": "ucid",
             "outcome": "pass"
           }
-        ]
+        ],
+        "human_in_loop": "approved"
       },
       "runtime": {
         "content_included": false,
@@ -139,8 +151,8 @@
         },
         "remedy": {
           "types": [
-            "correction",
-            "reversal"
+            "reversal",
+            "correction"
           ],
           "collective_redress": false
         }
@@ -182,11 +194,11 @@
       "algorithm": "Ed25519",
       "canonicalization": "JCS",
       "key_id": "did:web:cafe.aigovops-foundation.example#receipt-2026-09",
-      "value": "TA8zCcxOiI4oOU5i7rRodOkx3MMoMXf9BghMrh9Vvzptbpg9ngyXm9ucm1txhBYjdNuWUQuPb5k-IkD6J7FIAA"
+      "value": "5b0P6EjCDOyDtTIw9UlBB36VFDe3eOJp4lV8x2mfJSi6vhdMX8RNqtY54xWgllX3geMWrX5du__GtoMjBYI1DA"
     },
     "extensions": {
       "aigovops.corpus": {
-        "case": "VH-088"
+        "case": "VH-056"
       }
     }
   },
