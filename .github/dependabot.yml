@@ -13,8 +13,14 @@ updates:
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
+    groups:
+      pip:
+        patterns: ["*"]
   - package-ecosystem: "npm"
     directory: "/packages/typescript"
     schedule:
       interval: "weekly"
     open-pull-requests-limit: 5
+    groups:
+      npm:
+        patterns: ["*"]
